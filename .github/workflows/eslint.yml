@@ -20,7 +20,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install modules
-      - run: yarn
+        run: yarn
 
       - name: run ESlint
         run: make lint
