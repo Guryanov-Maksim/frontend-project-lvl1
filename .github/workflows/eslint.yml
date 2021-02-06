@@ -19,7 +19,11 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
+      - name: Install modules
+        run: yarn
+
       - name: run ESlint
         run: make lint
         env: 
           DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
