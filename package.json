@@ -10,9 +10,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "readline-sync": "*"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Guryanov-Maksim/frontend-project-lvl1.git"
@@ -22,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Guryanov-Maksim/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Guryanov-Maksim/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Guryanov-Maksim/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
