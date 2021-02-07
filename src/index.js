@@ -12,11 +12,11 @@ export const getRandomMathSign = () => {
 
 export const isEven = (num) => num % 2 === 0;
 
-export default (getQuestion, getCorrectAnswer, isWrongAnswer) => {
+export default (getQuestion, getCorrectAnswer, isWrongAnswer, task) => {
   console.log('Welcome to the Brain Games!');
   const name = getUserAnswer('May I have your name? ');
   console.log(`Hello, ${name}`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(task);
   for (let round = 1; round <= 3; round += 1) {
     const question = getQuestion();
     console.log(`Question: ${question}`);
