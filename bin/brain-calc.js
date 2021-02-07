@@ -2,6 +2,8 @@
 
 import runGame, { getRandomNumber, getRandomMathSign } from '../src/index.js';
 
+const task = 'What is the result of the expression?';
+
 const getQuestion = () => {
   const num1 = getRandomNumber(1, 50);
   const num2 = getRandomNumber(1, 50);
@@ -22,4 +24,4 @@ const getCorrectAnswer = (mathExpression) => {
 
 const isWrongAnswer = (playerAnswer, correctAnswer) => playerAnswer !== correctAnswer;
 
-runGame(getQuestion, getCorrectAnswer, isWrongAnswer);
+runGame(getQuestion, getCorrectAnswer, isWrongAnswer, task);
