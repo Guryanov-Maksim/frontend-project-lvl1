@@ -8,3 +8,7 @@
 Getting started
 
 [![asciicast](https://asciinema.org/a/cgULiyQLudOSPVxTYTLzC0kM7.svg)](https://asciinema.org/a/cgULiyQLudOSPVxTYTLzC0kM7)
+
+Brain-calc game gameplay
+
+[![asciicast](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z.svg)](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z)
