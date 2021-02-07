@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
-import runGame from '../src/even-game.js';
+import runGame, { getRandomNumber, isEven } from '../src/index.js';
 
-runGame();
+const getQuestion = () => getRandomNumber(1, 50);
+
+const getCorrectAnswer = (num) => (isEven(num) ? 'yes' : 'no');
+
+const isWrongAnswer = (playerAnswer, correctAnswer) => playerAnswer !== correctAnswer;
+
+runGame(getQuestion, getCorrectAnswer, isWrongAnswer);
