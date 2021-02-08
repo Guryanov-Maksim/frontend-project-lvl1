@@ -12,3 +12,7 @@ Getting started
 Brain-calc game gameplay
 
 [![asciicast](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z.svg)](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z)
+
+Brain-gcd game gameplay
+
+[![asciicast](https://asciinema.org/a/qrzdY9yfcOHRtAljfnTqctYUF.svg)](https://asciinema.org/a/qrzdY9yfcOHRtAljfnTqctYUF)
