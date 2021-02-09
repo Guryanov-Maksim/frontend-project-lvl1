@@ -12,6 +12,24 @@ export const getRandomMathSign = () => {
 
 export const isEven = (num) => num % 2 === 0;
 
+export const isPrime = (num) => {
+// Primality test using 6k+-1 optimization
+  if (num <= 3) {
+    return num > 1;
+  }
+  if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  }
+  let i = 5;
+  while (i ** 2 <= num) {
+    if (num % i === 0 || num % (i + 2) === 0) {
+      return false;
+    }
+    i += 6;
+  }
+  return true;
+};
+
 export default (getQuestion, getCorrectAnswer, isWrongAnswer, task) => {
   console.log('Welcome to the Brain Games!');
   const name = getUserAnswer('May I have your name? ');
