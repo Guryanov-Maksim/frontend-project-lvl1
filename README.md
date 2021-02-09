@@ -20,3 +20,7 @@ Brain-gcd game gameplay
 Brain-progression game gameplay
 
 [![asciicast](https://asciinema.org/a/gs1gWTpG7v0d5M2C8k63dhleh.svg)](https://asciinema.org/a/gs1gWTpG7v0d5M2C8k63dhleh)
+
+Brain-prime game gameplay
+
+[![asciicast](https://asciinema.org/a/GUHEKgfk81iE1suDPG1xoTMA5.svg)](https://asciinema.org/a/GUHEKgfk81iE1suDPG1xoTMA5)
