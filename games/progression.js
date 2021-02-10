@@ -20,8 +20,8 @@ export const getQuestion = () => {
   return progressionWithHiddenEl.join(' ');
 };
 
-export const getHiddenElement = (progressionStr) => {
-  const progression = progressionStr
+export const getHiddenElement = (progressionOfStrings) => {
+  const progression = progressionOfStrings
     .split(' ')
     .map((item) => (item === '..' ? '..' : Number(item)));
   const hiddenIndex = progression.indexOf('..');
