@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../src/index.js';
+import getRandomNumber from '../src/randomGenerator.js';
 
 const isPrime = (num) => {
 // Primality test using 6k+-1 optimization

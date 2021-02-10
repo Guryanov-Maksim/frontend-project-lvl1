@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../src/index.js';
+import getRandomNumber from '../src/randomGenerator.js';
 
 const makeProgression = () => {
   const firstElement = getRandomNumber(1, 30);
