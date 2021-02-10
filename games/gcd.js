@@ -24,7 +24,7 @@ export const getQuestion = () => {
     return findNumbersWithGcd(num);
   };
 
-  const mustBeWithGcd = getRandomNumber(1, 3) === 1;
+  const mustBeWithGcd = getRandomNumber(1, 2) === 1;
   const num1 = getRandomNumber(1, 100);
   const num2 = mustBeWithGcd ? findNumbersWithGcd(num1) : getRandomNumber(1, 100);
   return `${num1} ${num2}`;
