@@ -12,7 +12,7 @@ const makeProgression = () => {
 };
 
 export const getQuestion = () => {
-  const position = getRandomNumber(1, 10);
+  const position = getRandomNumber(0, 9);
   const progression = makeProgression();
   const progressionWithHiddenEl = progression.map((item, index) => (
     index === position ? '..' : item
