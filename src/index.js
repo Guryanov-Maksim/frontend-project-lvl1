@@ -14,7 +14,7 @@ export default (getQuestion, getCorrectAnswer, task) => {
     console.log(`Question: ${question}`);
     const answer = getUserAnswer('Your answer: ');
     const correctAnswer = getCorrectAnswer(question);
-    if (`${answer}` !== correctAnswer) {
+    if (answer !== `${correctAnswer}`) {
       console.log(`'${answer}' is wrong answer ;( Correct answer was '${correctAnswer}'`);
       console.log(`Let's try again, ${name}!`);
       return;
