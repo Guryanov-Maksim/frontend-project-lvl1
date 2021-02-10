@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 import runGame from '../src/index.js';
-import { getQuestion, getCorrectAnswer } from '../games/calc.js';
+import { getMathExpression, solveMathExpression } from '../games/calc.js';
 
 runGame(
-  getQuestion,
-  getCorrectAnswer,
+  getMathExpression,
+  solveMathExpression,
   'What is the result of the expression?',
 );
