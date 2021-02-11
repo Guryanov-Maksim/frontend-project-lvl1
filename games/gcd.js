@@ -15,7 +15,7 @@ export const getGcd = (numbers) => {
   return iter(num1, num2);
 };
 
-export const getQuestion = () => {
+export const getTwoRandomNumbers = () => {
   const findNumbersWithGcd = (num) => {
     const result = getRandomNumber(1, 100);
     if (getGcd(`${num} ${result}`) !== 1) {

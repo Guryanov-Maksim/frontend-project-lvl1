@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 import runGame from '../src/index.js';
-import { getQuestion, getGcd } from '../games/gcd.js';
+import { getTwoRandomNumbers, getGcd } from '../games/gcd.js';
 
 runGame(
-  getQuestion,
+  getTwoRandomNumbers,
   getGcd,
   'Find the greatest common divisor of given numbers.',
 );
