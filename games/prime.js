@@ -1,6 +1,4 @@
-import getRandomNumber from '../src/randomGenerator.js';
-
-const isPrime = (num) => {
+export default (num) => {
 // Primality test using 6k+-1 optimization
   if (num <= 3) {
     return num > 1;
@@ -17,7 +15,3 @@ const isPrime = (num) => {
   }
   return true;
 };
-
-export const getQuestion = () => getRandomNumber(1, 1000);
-
-export const getCorrectAnswer = (num) => (isPrime(num) ? 'yes' : 'no');
