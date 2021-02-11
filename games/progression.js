@@ -11,7 +11,7 @@ const makeProgression = () => {
   return progression;
 };
 
-export const getQuestion = () => {
+export const getProgressionWithHiddenElement = () => {
   const position = getRandomNumber(0, 9);
   const progression = makeProgression();
   const progressionWithHiddenEl = progression.map((item, index) => (
