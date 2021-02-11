@@ -5,7 +5,7 @@ import isPrime from '../games/prime.js';
 import getRandomNumber from '../src/randomGenerator.js';
 
 runGame(
-  getRandomNumber(1, 1000),
+  () => getRandomNumber(1, 1000),
   (num) => (isPrime(num) ? 'yes' : 'no'),
   'Answer "yes" if given number is prime. Otherwise answer "no".',
 );
