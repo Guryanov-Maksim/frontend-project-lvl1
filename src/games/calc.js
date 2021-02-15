@@ -23,3 +23,5 @@ export const solveMathExpression = (mathExpression) => {
   }
   return `${Number(num1) * Number(num2)}`;
 };
+
+export const getTaskForPlayer = () => 'What is the result of the expression?';
