@@ -18,22 +18,34 @@ This is a kit of games to train your brain.
 
 ## Run
 
-### brain-even game run
+If you want to run the games with one command by typing game name you have to execute the `npm link` command in your command line (see [npm link](https://docs.npmjs.com/cli/v7/commands/npm-link))
+
+The games in asciicasts are run by typing game name
+
+Also you can use `make` commands
+- `make brain-games`
+- `make brain-calc`
+- `make brain-even`
+- `make brain-gcd`
+- `make brain-prime`
+- `make brain-progression`
+
+### brain-even game gameplay
 
 [![asciicast](https://asciinema.org/a/cgULiyQLudOSPVxTYTLzC0kM7.svg)](https://asciinema.org/a/cgULiyQLudOSPVxTYTLzC0kM7)
 
-### brain-calc game run
+### brain-calc game gameplay
 
 [![asciicast](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z.svg)](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z)
 
-### brain-gcd game run
+### brain-gcd game gameplay
 
 [![asciicast](https://asciinema.org/a/qrzdY9yfcOHRtAljfnTqctYUF.svg)](https://asciinema.org/a/qrzdY9yfcOHRtAljfnTqctYUF)
 
-### brain-progression game run
+### brain-progression game gameplay
 
 [![asciicast](https://asciinema.org/a/gs1gWTpG7v0d5M2C8k63dhleh.svg)](https://asciinema.org/a/gs1gWTpG7v0d5M2C8k63dhleh)
 
-### brain-prime game run
+### brain-prime game gameplay
 
 [![asciicast](https://asciinema.org/a/GUHEKgfk81iE1suDPG1xoTMA5.svg)](https://asciinema.org/a/GUHEKgfk81iE1suDPG1xoTMA5)
