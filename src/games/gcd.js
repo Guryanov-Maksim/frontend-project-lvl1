@@ -1,4 +1,4 @@
-import getRandomNumber from '../src/randomGenerator.js';
+import getRandomNumber from '../randomNumber.js';
 
 export const getGcd = (numbers) => {
   const [num1, num2] = numbers
