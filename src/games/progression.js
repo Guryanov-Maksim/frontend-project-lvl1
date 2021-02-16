@@ -2,11 +2,11 @@ import getRandomNumber from '../randomNumber.js';
 
 const makeProgression = () => {
   const firstElement = getRandomNumber(1, 30);
-  const step = getRandomNumber(1, 15);
+  const progressionStep = getRandomNumber(1, 15);
   const progressionLength = 10;
   const progression = [firstElement];
   for (let i = 0; i < progressionLength - 1; i += 1) {
-    progression.push(progression[i] + step);
+    progression.push(progression[i] + progressionStep);
   }
   return progression;
 };
@@ -28,15 +28,15 @@ export const getHiddenElement = (progressionOfStrings) => {
   const middleIndex = progression.length / 2;
   if (hiddenIndex >= middleIndex) {
     const [first, second] = progression;
-    const step = second - first;
+    const progressionStep = second - first;
     const beforeHidden = progression[hiddenIndex - 1];
-    return beforeHidden + step;
+    return beforeHidden + progressionStep;
   }
   const middle = progression[middleIndex];
   const nextToMiddle = progression[middleIndex + 1];
-  const step = nextToMiddle - middle;
+  const progressionStep = nextToMiddle - middle;
   const nextToHidden = progression[hiddenIndex + 1];
-  return nextToHidden - step;
+  return nextToHidden - progressionStep;
 };
 
 export const getTaskForPlayer = () => 'What number is missing in the progression?';
