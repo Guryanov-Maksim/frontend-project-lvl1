@@ -17,13 +17,10 @@ export const getProgressionWithHiddenElement = () => {
   const progressionWithHiddenEl = progression.map((item, index) => (
     index === position ? '..' : item
   ));
-  return progressionWithHiddenEl.join(' ');
+  return progressionWithHiddenEl;
 };
 
-export const getHiddenElement = (progressionOfStrings) => {
-  const progression = progressionOfStrings
-    .split(' ')
-    .map((item) => (item === '..' ? '..' : Number(item)));
+export const getHiddenElement = (progression) => {
   const hiddenIndex = progression.indexOf('..');
   const middleIndex = progression.length / 2;
   if (hiddenIndex >= middleIndex) {
