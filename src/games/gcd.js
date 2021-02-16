@@ -1,10 +1,7 @@
 import getRandomNumber from '../randomNumber.js';
 
 export const getGcd = (numbers) => {
-  const [num1, num2] = numbers
-    .split(' ')
-    .map((num) => Number(num))
-    .sort();
+  const [num1, num2] = numbers;
   const iter = (a, b) => {
     const remainder = a % b;
     if (remainder === 0) {
@@ -16,12 +13,9 @@ export const getGcd = (numbers) => {
 };
 
 export const getTwoRandomNumbers = () => {
-  const findNumbersWithGcd = (num) => {
-    const result = getRandomNumber(1, 100);
-    if (getGcd(`${num} ${result}`) !== 1) {
-      return result;
-    }
-    return findNumbersWithGcd(num);
-  };
+  const num1 = getRandomNumber(1, 100);
+  const num2 = getRandomNumber(1, 100);
+  return [num1, num2];
+};
 
 export const getTaskForPlayer = () => 'Find the greatest common divisor of given numbers.';
