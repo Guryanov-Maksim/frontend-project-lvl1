@@ -1,6 +1,9 @@
 import getRandomNumber from '../randomNumber.js';
 
 const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
   let devisor = 2;
   while (devisor <= Math.sqrt(num)) {
     const remainder = num % devisor;
