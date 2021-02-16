@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { showGreeting, getPlayerName, greetPlayer } from '../src/cli.js';
+import { showCommonGreeting, getPlayerName, greetPlayer } from '../src/cli.js';
 
-showGreeting();
+showCommonGreeting();
 greetPlayer(getPlayerName());
