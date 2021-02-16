@@ -5,22 +5,35 @@
 
 ![ESlint](https://github.com/Guryanov-Maksim/frontend-project-lvl1/workflows/ESlint/badge.svg)
 
-Getting started
+# Brain games
+
+This is a kit of games to train your brain.
+
+## Setup
+
+        $ git clone https://github.com/Guryanov-Maksim/frontend-project-lvl1.git brain-games
+
+        $cd brain-games
+        $ make install
+
+## Run
+
+### brain-even game run
 
 [![asciicast](https://asciinema.org/a/cgULiyQLudOSPVxTYTLzC0kM7.svg)](https://asciinema.org/a/cgULiyQLudOSPVxTYTLzC0kM7)
 
-Brain-calc game gameplay
+### brain-calc game run
 
 [![asciicast](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z.svg)](https://asciinema.org/a/Cg7LipDhjbCVhq78R1xuZKv7z)
 
-Brain-gcd game gameplay
+### brain-gcd game run
 
 [![asciicast](https://asciinema.org/a/qrzdY9yfcOHRtAljfnTqctYUF.svg)](https://asciinema.org/a/qrzdY9yfcOHRtAljfnTqctYUF)
 
-Brain-progression game gameplay
+### brain-progression game run
 
 [![asciicast](https://asciinema.org/a/gs1gWTpG7v0d5M2C8k63dhleh.svg)](https://asciinema.org/a/gs1gWTpG7v0d5M2C8k63dhleh)
 
-Brain-prime game gameplay
+### brain-prime game run
 
 [![asciicast](https://asciinema.org/a/GUHEKgfk81iE1suDPG1xoTMA5.svg)](https://asciinema.org/a/GUHEKgfk81iE1suDPG1xoTMA5)
