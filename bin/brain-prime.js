@@ -2,7 +2,7 @@
 
 import runGame from '../src/index.js';
 import isPrime from '../games/prime.js';
-import getRandomNumber from '../src/randomGenerator.js';
+import getRandomNumber from '../src/randomNumber.js';
 
 runGame(
   () => getRandomNumber(1, 1000),
