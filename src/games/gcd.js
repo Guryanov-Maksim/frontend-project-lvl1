@@ -24,8 +24,4 @@ export const getTwoRandomNumbers = () => {
     return findNumbersWithGcd(num);
   };
 
-  const mustBeWithGcd = getRandomNumber(1, 2) === 1;
-  const num1 = getRandomNumber(1, 100);
-  const num2 = mustBeWithGcd ? findNumbersWithGcd(num1) : getRandomNumber(1, 100);
-  return `${num1} ${num2}`;
-};
+export const getTaskForPlayer = () => 'Find the greatest common divisor of given numbers.';
