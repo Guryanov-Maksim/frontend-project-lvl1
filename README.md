@@ -18,11 +18,11 @@ This is a kit of games to train your brain.
 
 ## Run
 
-If you want to run the games with one command by typing game name you have to execute the `npm link` command in your command line (see [npm link](https://docs.npmjs.com/cli/v7/commands/npm-link))
+If you want to run the games by typing a game name you have to execute the `npm link` command in the package folder (see [npm link](https://docs.npmjs.com/cli/v7/commands/npm-link))
 
-The games in asciicasts are run by typing game name
+The games in asciicasts are run by typing a game name
 
-Also you can use `make` commands
+Also you can use the following `make` commands in the package folder
 - `make brain-games`
 - `make brain-calc`
 - `make brain-even`
