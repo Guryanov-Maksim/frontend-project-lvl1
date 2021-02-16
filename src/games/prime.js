@@ -2,7 +2,7 @@ import getRandomNumber from '../randomNumber.js';
 
 const isPrime = (num) => {
   let devisor = 2;
-  while (devisor < Math.sqrt(num)) {
+  while (devisor <= Math.sqrt(num)) {
     const remainder = num % devisor;
     if (remainder === 0) {
       return false;
