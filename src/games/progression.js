@@ -38,3 +38,5 @@ export const getHiddenElement = (progressionOfStrings) => {
   const nextToHidden = progression[hiddenIndex + 1];
   return nextToHidden - step;
 };
+
+export const getTaskForPlayer = () => 'What number is missing in the progression?';
