@@ -4,11 +4,11 @@ import runGame from '../src/index.js';
 import {
   getProgressionWithHiddenElement,
   getHiddenElement,
-  getTaskForPlayer,
+  taskForPlayer,
 } from '../src/games/progression.js';
 
 runGame(
   getProgressionWithHiddenElement,
   getHiddenElement,
-  getTaskForPlayer,
+  taskForPlayer,
 );

@@ -6,4 +6,4 @@ export const getOneRandomNumber = () => getRandomNumber(1, 50);
 
 export const checkEvenness = (num) => (isEven(num) ? 'yes' : 'no');
 
-export const getTaskForPlayer = () => 'Answer "yes" if the number is even, otherwise answer "no".';
+export const taskForPlayer = 'Answer "yes" if the number is even, otherwise answer "no".';

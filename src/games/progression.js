@@ -36,4 +36,4 @@ export const getHiddenElement = (progression) => {
   return nextToHidden - progressionStep;
 };
 
-export const getTaskForPlayer = () => 'What number is missing in the progression?';
+export const taskForPlayer = 'What number is missing in the progression?';

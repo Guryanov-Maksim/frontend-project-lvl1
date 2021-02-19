@@ -12,11 +12,10 @@ const toString = (data) => {
   return String(data);
 };
 
-export default (getQuestion, getCorrectAnswer, getTaskForPlayer) => {
+export default (getQuestion, getCorrectAnswer, taskForPlayer) => {
   showCommonGreeting();
   const name = getPlayerName();
   greetPlayer(name);
-  const taskForPlayer = getTaskForPlayer();
   console.log(taskForPlayer);
   for (let round = 0; round < 3; round += 1) {
     const question = getQuestion();

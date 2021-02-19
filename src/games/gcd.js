@@ -18,4 +18,4 @@ export const getTwoRandomNumbers = () => {
   return [num1, num2];
 };
 
-export const getTaskForPlayer = () => 'Find the greatest common divisor of given numbers.';
+export const taskForPlayer = 'Find the greatest common divisor of given numbers.';

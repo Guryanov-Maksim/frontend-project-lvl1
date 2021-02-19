@@ -19,4 +19,4 @@ export const getOneRandomNumber = () => getRandomNumber(1, 50);
 
 export const checkPrimality = (num) => (isPrime(num) ? 'yes' : 'no');
 
-export const getTaskForPlayer = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const taskForPlayer = 'Answer "yes" if given number is prime. Otherwise answer "no".';

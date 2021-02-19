@@ -27,4 +27,4 @@ export const solveMathExpression = (mathExpression) => {
   }
 };
 
-export const getTaskForPlayer = () => 'What is the result of the expression?';
+export const taskForPlayer = 'What is the result of the expression?';
