@@ -15,13 +15,16 @@ export const getMathExpression = () => {
 
 export const solveMathExpression = (mathExpression) => {
   const [num1, sign, num2] = mathExpression;
-  if (sign === '+') {
-    return num1 + num2;
+  switch (sign) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`non supported operator ${sign}`);
   }
-  if (sign === '-') {
-    return num1 - num2;
-  }
-  return num1 * num2;
 };
 
 export const getTaskForPlayer = () => 'What is the result of the expression?';
