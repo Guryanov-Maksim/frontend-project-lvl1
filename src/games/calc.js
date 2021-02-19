@@ -2,7 +2,7 @@ import getRandomNumber from '../randomNumber.js';
 
 const getRandomMathSign = () => {
   const signs = ['+', '-', '*'];
-  const index = getRandomNumber(0, 2);
+  const index = getRandomNumber(0, signs.length - 1);
   return signs[index];
 };
 
