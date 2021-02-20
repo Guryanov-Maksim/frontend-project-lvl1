@@ -12,28 +12,18 @@ const makeProgression = () => {
 };
 
 export const getProgressionWithHiddenElement = () => {
-  const position = getRandomNumber(0, 9);
+  const hiddenElementIndex = getRandomNumber(0, 9);
   const progression = makeProgression();
+  const hiddenElement = progression[hiddenElementIndex];
   const progressionWithHiddenEl = progression.map((item, index) => (
-    index === position ? '..' : item
+    index === hiddenElementIndex ? '..' : item
   ));
-  return progressionWithHiddenEl;
+  return [progressionWithHiddenEl, hiddenElement];
 };
 
-export const getHiddenElement = (progression) => {
-  const hiddenIndex = progression.indexOf('..');
-  const middleIndex = progression.length / 2;
-  if (hiddenIndex >= middleIndex) {
-    const [first, second] = progression;
-    const progressionStep = second - first;
-    const beforeHidden = progression[hiddenIndex - 1];
-    return beforeHidden + progressionStep;
-  }
-  const middle = progression[middleIndex];
-  const nextToMiddle = progression[middleIndex + 1];
-  const progressionStep = nextToMiddle - middle;
-  const nextToHidden = progression[hiddenIndex + 1];
-  return nextToHidden - progressionStep;
+export const getHiddenElement = (progressionAndHiddenElement) => {
+  const [, hiddenElement] = progressionAndHiddenElement;
+  return hiddenElement;
 };
 
 export const taskForPlayer = 'What number is missing in the progression?';
