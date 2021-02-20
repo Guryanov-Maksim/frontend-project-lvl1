@@ -7,7 +7,10 @@ import {
 
 const toString = (data) => {
   if (Array.isArray(data)) {
-    return data.join(' ');
+    const [firstElement] = data;
+    return Array.isArray(firstElement)
+      ? firstElement.join(' ')
+      : data.join(' ');
   }
   return String(data);
 };
