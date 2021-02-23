@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
 import runGame from '../src/index.js';
-import { getNumberAndItsPrimality, taskForPlayer } from '../src/games/prime.js';
+import configuration from '../src/games/prime.js';
 
-runGame(
-  getNumberAndItsPrimality,
-  taskForPlayer,
-);
+runGame(configuration);

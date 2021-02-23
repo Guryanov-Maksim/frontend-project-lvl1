@@ -5,10 +5,11 @@ import {
   askAndGetPlayerAnswer,
 } from './cli.js';
 
-export default (getQuestionAndAnswer, taskForPlayer) => {
+export default (configuration) => {
   showCommonGreeting();
   const name = askAndGetPlayerName();
   greetPlayer(name);
+  const [getQuestionAndAnswer, taskForPlayer] = configuration;
   console.log(taskForPlayer);
   for (let round = 0; round < 3; round += 1) {
     const [question, answer] = getQuestionAndAnswer();

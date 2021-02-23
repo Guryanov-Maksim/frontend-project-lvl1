@@ -27,10 +27,12 @@ const solveMathExpression = (mathExpression) => {
   }
 };
 
-export const getAndSolveMathExpression = () => {
+const getAndSolveMathExpression = () => {
   const mathExpression = getMathExpression();
   const solution = solveMathExpression(mathExpression);
   return [mathExpression.join(' '), String(solution)];
 };
 
-export const taskForPlayer = 'What is the result of the expression?';
+const taskForPlayer = 'What is the result of the expression?';
+
+export default [getAndSolveMathExpression, taskForPlayer];

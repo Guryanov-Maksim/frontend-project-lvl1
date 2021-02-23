@@ -11,7 +11,7 @@ const makeProgression = () => {
   return progression;
 };
 
-export const getProgressionAndHiddenElement = () => {
+const getProgressionAndHiddenElement = () => {
   const hiddenElementIndex = getRandomNumber(0, 9);
   const progression = makeProgression();
   const hiddenElement = progression[hiddenElementIndex];
@@ -21,13 +21,6 @@ export const getProgressionAndHiddenElement = () => {
   return [progressionWithHiddenEl.join(' '), String(hiddenElement)];
 };
 
-// export const getHiddenElement = (progressionAndHiddenElement) => {
-//   const [, hiddenElement] = progressionAndHiddenElement;
-//   return hiddenElement;
-// };
+const taskForPlayer = 'What number is missing in the progression?';
 
-// export getQuestionAndAnswer = () => {
-//   const progression = getProgressionWithHiddenElement();
-// };
-
-export const taskForPlayer = 'What number is missing in the progression?';
+export default [getProgressionAndHiddenElement, taskForPlayer];

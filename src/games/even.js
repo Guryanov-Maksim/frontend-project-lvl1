@@ -6,10 +6,12 @@ const getOneRandomNumber = () => getRandomNumber(1, 50);
 
 const checkEvenness = (num) => (isEven(num) ? 'yes' : 'no');
 
-export const getNumberAndItskEvenness = () => {
+const getNumberAndItskEvenness = () => {
   const number = getOneRandomNumber();
   const evenness = checkEvenness(number);
   return [String(number), evenness];
 };
 
-export const taskForPlayer = 'Answer "yes" if the number is even, otherwise answer "no".';
+const taskForPlayer = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+export default [getNumberAndItskEvenness, taskForPlayer];

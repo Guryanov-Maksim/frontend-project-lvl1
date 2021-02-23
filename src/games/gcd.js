@@ -18,10 +18,12 @@ const getTwoRandomNumbers = () => {
   return [num1, num2];
 };
 
-export const getTwoNumbersAndTheirGcd = () => {
+const getTwoNumbersAndTheirGcd = () => {
   const numbers = getTwoRandomNumbers();
   const gcd = getGcd(numbers);
   return [numbers.join(' '), String(gcd)];
 };
 
-export const taskForPlayer = 'Find the greatest common divisor of given numbers.';
+const taskForPlayer = 'Find the greatest common divisor of given numbers.';
+
+export default [getTwoNumbersAndTheirGcd, taskForPlayer];
