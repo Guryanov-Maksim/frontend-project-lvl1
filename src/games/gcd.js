@@ -1,4 +1,5 @@
 import getRandomNumber from '../randomNumber.js';
+import { makeDefaultAcquaintanceOfPlayer } from '../cli.js';
 
 const getGcd = (numbers) => {
   const [num1, num2] = numbers;
@@ -26,4 +27,8 @@ const getTwoNumbersAndTheirGcd = () => {
 
 const taskForPlayer = 'Find the greatest common divisor of given numbers.';
 
-export default [getTwoNumbersAndTheirGcd, taskForPlayer];
+export default [
+  makeDefaultAcquaintanceOfPlayer,
+  getTwoNumbersAndTheirGcd,
+  taskForPlayer,
+];

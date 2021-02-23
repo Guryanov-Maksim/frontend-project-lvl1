@@ -1,4 +1,5 @@
 import getRandomNumber from '../randomNumber.js';
+import { makeDefaultAcquaintanceOfPlayer } from '../cli.js';
 
 const getRandomMathSign = () => {
   const signs = ['+', '-', '*'];
@@ -35,4 +36,8 @@ const getAndSolveMathExpression = () => {
 
 const taskForPlayer = 'What is the result of the expression?';
 
-export default [getAndSolveMathExpression, taskForPlayer];
+export default [
+  makeDefaultAcquaintanceOfPlayer,
+  getAndSolveMathExpression,
+  taskForPlayer,
+];

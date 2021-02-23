@@ -1,4 +1,5 @@
 import getRandomNumber from '../randomNumber.js';
+import { makeDefaultAcquaintanceOfPlayer } from '../cli.js';
 
 const makeProgression = () => {
   const firstElement = getRandomNumber(1, 30);
@@ -23,4 +24,8 @@ const getProgressionAndHiddenElement = () => {
 
 const taskForPlayer = 'What number is missing in the progression?';
 
-export default [getProgressionAndHiddenElement, taskForPlayer];
+export default [
+  makeDefaultAcquaintanceOfPlayer,
+  getProgressionAndHiddenElement,
+  taskForPlayer,
+];

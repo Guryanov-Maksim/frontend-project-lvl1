@@ -6,7 +6,7 @@ const showCommonGreeting = () => console.log('Welcome to the Brain Games!');
 
 const greetPlayer = (name) => console.log(`Hello, ${name}`);
 
-export const getAcquaintedWithPlayer = () => {
+export const makeDefaultAcquaintanceOfPlayer = () => {
   showCommonGreeting();
   const name = askPlayer('May I have your name? ');
   greetPlayer(name);

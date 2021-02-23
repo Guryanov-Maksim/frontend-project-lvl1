@@ -1,11 +1,16 @@
-import { askPlayer } from './cli.js';
+import { askPlayer, makeDefaultAcquaintanceOfPlayer } from './cli.js';
 
-export default (getAcquaintedWithPlayer, configuration = null) => {
-  const name = getAcquaintedWithPlayer();
+export default (configuration = null) => {
   if (configuration === null) {
+    makeDefaultAcquaintanceOfPlayer();
     return;
   }
-  const [getQuestionAndAnswer, taskForPlayer] = configuration;
+  const [
+    getAcquaintedWithPlayer,
+    getQuestionAndAnswer,
+    taskForPlayer,
+  ] = configuration;
+  const name = getAcquaintedWithPlayer();
   console.log(taskForPlayer);
   for (let round = 0; round < 3; round += 1) {
     const [question, answer] = getQuestionAndAnswer();
