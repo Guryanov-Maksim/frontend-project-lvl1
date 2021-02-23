@@ -1,14 +1,10 @@
-import {
-  showCommonGreeting,
-  askAndGetPlayerName,
-  greetPlayer,
-  askAndGetPlayerAnswer,
-} from './cli.js';
+import { askAndGetPlayerAnswer } from './cli.js';
 
-export default (configuration) => {
-  showCommonGreeting();
-  const name = askAndGetPlayerName();
-  greetPlayer(name);
+export default (getAcquaintedWithPlayer, configuration = null) => {
+  const name = getAcquaintedWithPlayer();
+  if (configuration === null) {
+    return;
+  }
   const [getQuestionAndAnswer, taskForPlayer] = configuration;
   console.log(taskForPlayer);
   for (let round = 0; round < 3; round += 1) {

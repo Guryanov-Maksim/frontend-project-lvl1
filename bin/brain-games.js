@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { showCommonGreeting, askAndGetPlayerName, greetPlayer } from '../src/cli.js';
+import runGame from '../src/index.js';
+import { getAcquaintedWithPlayer } from '../src/cli.js';
 
-showCommonGreeting();
-greetPlayer(askAndGetPlayerName());
+runGame(getAcquaintedWithPlayer);
