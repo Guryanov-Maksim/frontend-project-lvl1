@@ -11,19 +11,23 @@ const makeProgression = () => {
   return progression;
 };
 
-export const getProgressionWithHiddenElement = () => {
+export const getProgressionAndHiddenElement = () => {
   const hiddenElementIndex = getRandomNumber(0, 9);
   const progression = makeProgression();
   const hiddenElement = progression[hiddenElementIndex];
   const progressionWithHiddenEl = progression.map((item, index) => (
     index === hiddenElementIndex ? '..' : item
   ));
-  return [progressionWithHiddenEl, hiddenElement];
+  return [progressionWithHiddenEl.join(' '), String(hiddenElement)];
 };
 
-export const getHiddenElement = (progressionAndHiddenElement) => {
-  const [, hiddenElement] = progressionAndHiddenElement;
-  return hiddenElement;
-};
+// export const getHiddenElement = (progressionAndHiddenElement) => {
+//   const [, hiddenElement] = progressionAndHiddenElement;
+//   return hiddenElement;
+// };
+
+// export getQuestionAndAnswer = () => {
+//   const progression = getProgressionWithHiddenElement();
+// };
 
 export const taskForPlayer = 'What number is missing in the progression?';

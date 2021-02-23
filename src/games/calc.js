@@ -6,14 +6,14 @@ const getRandomMathSign = () => {
   return signs[index];
 };
 
-export const getMathExpression = () => {
+const getMathExpression = () => {
   const num1 = getRandomNumber(1, 50);
   const num2 = getRandomNumber(1, 50);
   const sign = getRandomMathSign();
   return [num1, sign, num2];
 };
 
-export const solveMathExpression = (mathExpression) => {
+const solveMathExpression = (mathExpression) => {
   const [num1, sign, num2] = mathExpression;
   switch (sign) {
     case '+':
@@ -25,6 +25,12 @@ export const solveMathExpression = (mathExpression) => {
     default:
       throw new Error(`non supported operator ${sign}`);
   }
+};
+
+export const getAndSolveMathExpression = () => {
+  const mathExpression = getMathExpression();
+  const solution = solveMathExpression(mathExpression);
+  return [mathExpression.join(' '), String(solution)];
 };
 
 export const taskForPlayer = 'What is the result of the expression?';
