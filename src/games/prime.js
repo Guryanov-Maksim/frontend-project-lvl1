@@ -19,8 +19,9 @@ const isPrime = (num) => {
 
 const getQuestionAndAnswer = () => {
   const number = getRandomNumber(1, 50);
-  const primality = (isPrime(number) ? 'yes' : 'no');
-  return [String(number), primality];
+  const question = String(number);
+  const answer = (isPrime(number) ? 'yes' : 'no');
+  return [question, answer];
 };
 
 export default [

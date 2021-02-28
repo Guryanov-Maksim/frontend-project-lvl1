@@ -32,7 +32,9 @@ const solveMathExpression = (mathExpression) => {
 const getQuestionAndAnswer = () => {
   const mathExpression = getMathExpression();
   const solution = solveMathExpression(mathExpression);
-  return [mathExpression.join(' '), String(solution)];
+  const question = mathExpression.join(' ');
+  const answer = String(solution);
+  return [question, answer];
 };
 
 export default [

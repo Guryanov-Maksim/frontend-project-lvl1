@@ -20,7 +20,9 @@ const getQuestionAndAnswer = () => {
   const progressionWithHiddenEl = progression.map((item, index) => (
     index === hiddenElementIndex ? '..' : item
   ));
-  return [progressionWithHiddenEl.join(' '), String(hiddenElement)];
+  const question = progressionWithHiddenEl.join(' ');
+  const answer = String(hiddenElement);
+  return [question, answer];
 };
 
 export default [
