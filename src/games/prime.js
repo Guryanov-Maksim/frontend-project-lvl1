@@ -1,5 +1,4 @@
 import getRandomNumber from '../randomNumber.js';
-import { makeDefaultAcquaintanceOfPlayer } from '../cli.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -29,7 +28,6 @@ const getNumberAndItsPrimality = () => {
 const taskForPlayer = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default [
-  makeDefaultAcquaintanceOfPlayer,
   getNumberAndItsPrimality,
   taskForPlayer,
 ];

@@ -1,5 +1,4 @@
 import getRandomNumber from '../randomNumber.js';
-import { makeDefaultAcquaintanceOfPlayer } from '../cli.js';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -16,7 +15,6 @@ const getNumberAndItskEvenness = () => {
 const taskForPlayer = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export default [
-  makeDefaultAcquaintanceOfPlayer,
   getNumberAndItskEvenness,
   taskForPlayer,
 ];

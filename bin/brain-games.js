@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import runGame from '../src/index.js';
+import askPlayer from '../src/cli.js';
 
-runGame();
+console.log('Welcome to the Brain Games!');
+const name = askPlayer('May I have your name? ');
+console.log(`Hello, ${name}`);

@@ -1,16 +1,16 @@
-import { askPlayer, makeDefaultAcquaintanceOfPlayer } from './cli.js';
+import askPlayer from './cli.js';
 
 export default (configuration = null) => {
+  console.log('Welcome to the Brain Games!');
+  const name = askPlayer('May I have your name? ');
+  console.log(`Hello, ${name}`);
   if (configuration === null) {
-    makeDefaultAcquaintanceOfPlayer();
     return;
   }
   const [
-    getAcquaintedWithPlayer,
     getQuestionAndAnswer,
     taskForPlayer,
   ] = configuration;
-  const name = getAcquaintedWithPlayer();
   console.log(taskForPlayer);
   const numberOfRounds = 3;
   for (let round = 0; round < numberOfRounds; round += 1) {
