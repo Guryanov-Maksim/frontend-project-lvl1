@@ -11,7 +11,7 @@ const makeProgression = () => {
   return progression;
 };
 
-const getProgressionAndHiddenElement = () => {
+const getQuestionAndAnswer = () => {
   const progression = makeProgression();
   const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
   const hiddenElement = progression[hiddenElementIndex];
@@ -21,9 +21,9 @@ const getProgressionAndHiddenElement = () => {
   return [progressionWithHiddenEl.join(' '), String(hiddenElement)];
 };
 
-const taskForPlayer = 'What number is missing in the progression?';
+const taskDescription = 'What number is missing in the progression?';
 
 export default [
-  getProgressionAndHiddenElement,
-  taskForPlayer,
+  getQuestionAndAnswer,
+  taskDescription,
 ];
