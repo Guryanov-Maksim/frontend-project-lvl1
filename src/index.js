@@ -12,7 +12,8 @@ export default (configuration = null) => {
   ] = configuration;
   const name = getAcquaintedWithPlayer();
   console.log(taskForPlayer);
-  for (let round = 0; round < 3; round += 1) {
+  const numberOfRounds = 3;
+  for (let round = 0; round < numberOfRounds; round += 1) {
     const [question, answer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
     const playerAnswer = askPlayer('Your answer: ');
