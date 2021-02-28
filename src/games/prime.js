@@ -17,13 +17,9 @@ const isPrime = (num) => {
   return true;
 };
 
-const getOneRandomNumber = () => getRandomNumber(1, 50);
-
-const checkPrimality = (num) => (isPrime(num) ? 'yes' : 'no');
-
 const getQuestionAndAnswer = () => {
-  const number = getOneRandomNumber();
-  const primality = checkPrimality(number);
+  const number = getRandomNumber(1, 50);
+  const primality = (isPrime(number) ? 'yes' : 'no');
   return [String(number), primality];
 };
 

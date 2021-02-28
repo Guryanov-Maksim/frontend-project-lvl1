@@ -2,8 +2,7 @@ import getRandomNumber from '../randomNumber.js';
 
 const taskDescription = 'Find the greatest common divisor of given numbers.';
 
-const getGcd = (numbers) => {
-  const [num1, num2] = numbers;
+const getGcd = (num1, num2) => {
   const iter = (a, b) => {
     const remainder = a % b;
     if (remainder === 0) {
@@ -14,16 +13,11 @@ const getGcd = (numbers) => {
   return iter(num1, num2);
 };
 
-const getTwoRandomNumbers = () => {
+const getQuestionAndAnswer = () => {
   const num1 = getRandomNumber(1, 100);
   const num2 = getRandomNumber(1, 100);
-  return [num1, num2];
-};
-
-const getQuestionAndAnswer = () => {
-  const numbers = getTwoRandomNumbers();
-  const gcd = getGcd(numbers);
-  return [numbers.join(' '), String(gcd)];
+  const gcd = getGcd(num1, num2);
+  return [[num1, num2].join(' '), String(gcd)];
 };
 
 export default [

@@ -4,13 +4,9 @@ const taskDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const isEven = (num) => num % 2 === 0;
 
-const getOneRandomNumber = () => getRandomNumber(1, 50);
-
-const checkEvenness = (num) => (isEven(num) ? 'yes' : 'no');
-
 const getQuestionAndAnswer = () => {
-  const number = getOneRandomNumber();
-  const evenness = checkEvenness(number);
+  const number = getRandomNumber(1, 50);
+  const evenness = (isEven(number) ? 'yes' : 'no');
   return [String(number), evenness];
 };
 
