@@ -1,5 +1,7 @@
 import getRandomNumber from '../randomNumber.js';
 
+const taskDescription = 'What is the result of the expression?';
+
 const getRandomMathSign = () => {
   const signs = ['+', '-', '*'];
   const index = getRandomNumber(0, signs.length - 1);
@@ -32,8 +34,6 @@ const getQuestionAndAnswer = () => {
   const solution = solveMathExpression(mathExpression);
   return [mathExpression.join(' '), String(solution)];
 };
-
-const taskDescription = 'What is the result of the expression?';
 
 export default [
   getQuestionAndAnswer,

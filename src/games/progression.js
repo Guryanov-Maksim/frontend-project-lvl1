@@ -1,5 +1,7 @@
 import getRandomNumber from '../randomNumber.js';
 
+const taskDescription = 'What number is missing in the progression?';
+
 const makeProgression = () => {
   const firstElement = getRandomNumber(1, 30);
   const progressionStep = getRandomNumber(1, 15);
@@ -20,8 +22,6 @@ const getQuestionAndAnswer = () => {
   ));
   return [progressionWithHiddenEl.join(' '), String(hiddenElement)];
 };
-
-const taskDescription = 'What number is missing in the progression?';
 
 export default [
   getQuestionAndAnswer,

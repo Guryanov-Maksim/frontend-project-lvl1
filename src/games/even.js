@@ -1,5 +1,7 @@
 import getRandomNumber from '../randomNumber.js';
 
+const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const isEven = (num) => num % 2 === 0;
 
 const getOneRandomNumber = () => getRandomNumber(1, 50);
@@ -11,8 +13,6 @@ const getQuestionAndAnswer = () => {
   const evenness = checkEvenness(number);
   return [String(number), evenness];
 };
-
-const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export default [
   getQuestionAndAnswer,

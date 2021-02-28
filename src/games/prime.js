@@ -1,5 +1,7 @@
 import getRandomNumber from '../randomNumber.js';
 
+const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (num) => {
   if (num < 2) {
     return false;
@@ -24,8 +26,6 @@ const getQuestionAndAnswer = () => {
   const primality = checkPrimality(number);
   return [String(number), primality];
 };
-
-const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default [
   getQuestionAndAnswer,
