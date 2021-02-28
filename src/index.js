@@ -1,12 +1,9 @@
 import askPlayer from './cli.js';
 
-export default (configuration = null) => {
+export default (configuration) => {
   console.log('Welcome to the Brain Games!');
   const name = askPlayer('May I have your name? ');
   console.log(`Hello, ${name}`);
-  if (configuration === null) {
-    return;
-  }
   const [
     getQuestionAndAnswer,
     taskForPlayer,
