@@ -17,9 +17,8 @@ const getQuestionAndAnswer = () => {
   const progression = makeProgression();
   const hiddenElementIndex = getRandomNumber(0, progression.length - 1);
   const hiddenElement = progression[hiddenElementIndex];
-  const progressionWithHiddenEl = progression.map((item, index) => (
-    index === hiddenElementIndex ? '..' : item
-  ));
+  const progressionWithHiddenEl = [...progression];
+  progressionWithHiddenEl[hiddenElementIndex] = '..';
   const question = progressionWithHiddenEl.join(' ');
   const answer = String(hiddenElement);
   return [question, answer];
